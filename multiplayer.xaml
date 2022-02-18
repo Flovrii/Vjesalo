@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="VješaloXD.MainPage"
+    x:Class="VješaloXD.multiplayer"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:VješaloXD"
@@ -9,8 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="Play" Content="Play" Margin="0,334,0,0" VerticalAlignment="Top" Height="206" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Play_Click"/>
-        <Button x:Name="Quit" Content="Quit" Margin="0,583,0,0" VerticalAlignment="Top" Height="197" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Quit_Click"/>
 
     </Grid>
 </Page>

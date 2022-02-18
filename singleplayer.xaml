@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="VješaloXD.singleplayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VješaloXD"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name="naslov" HorizontalAlignment="Left" Margin="864,10,0,0" Text="Levels" TextWrapping="Wrap" VerticalAlignment="Top" Height="109" Width="219" FontSize="72"/>
+        <Button Content="Level 1" Margin="310,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="563,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="829,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="1121,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="1441,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="310,0,0,0" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="563,0,0,0" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="829,0,0,0" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="1121,0,0,0" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="1441,0,0,0" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="310,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="310,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="563,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="563,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="829,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="829,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="1121,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="1441,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="1121,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <Button Content="Level 1" Margin="1441,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+
+    </Grid>
+</Page>
