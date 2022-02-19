@@ -9,27 +9,27 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:Name="naslov" HorizontalAlignment="Left" Margin="864,10,0,0" Text="Levels" TextWrapping="Wrap" VerticalAlignment="Top" Height="109" Width="219" FontSize="72"/>
-        <Button Content="Level 1" Margin="310,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="563,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="829,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="1121,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="1441,317,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="310,0,0,0" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="563,0,0,0" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="829,0,0,0" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="1121,0,0,0" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="1441,0,0,0" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="310,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="310,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="563,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="563,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="829,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="829,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="1121,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="1441,672,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="1121,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
-        <Button Content="Level 1" Margin="1441,840,0,0" VerticalAlignment="Top" Height="100" Width="200" FontSize="52px"/>
+        <TextBlock x:Name="naslov" HorizontalAlignment="Left" Margin="820,52,0,0" Text="Levels" TextWrapping="Wrap" VerticalAlignment="Top" Height="161" Width="349" FontSize="128px"/>
+        <Button Content="Level 1" Margin="310,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 2" Margin="600,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 3" Margin="890,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 4" Margin="1180,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 5" Margin="1470,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" RenderTransformOrigin="-0.172,0.386"/>
+        <Button Content="Level 6" Margin="310,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top"/>
+        <Button Content="Level 7" Margin="600,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top"/>
+        <Button Content="Level 8" Margin="890,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top"/>
+        <Button Content="Level 9" Margin="1180,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top"/>
+        <Button Content="Level 10" Margin="1470,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top"/>
+        <Button Content="Level 11" Margin="310,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 16" Margin="310,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 17" Margin="600,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 12" Margin="600,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 13" Margin="890,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 18" Margin="890,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 14" Margin="1180,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 15" Margin="1470,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 19" Margin="1180,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
+        <Button Content="Level 20" Margin="1470,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
 
     </Grid>
 </Page>
