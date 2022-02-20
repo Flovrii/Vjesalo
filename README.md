@@ -1,2 +1,3 @@
 # Vjesalo
- Igra vjesalo.
+ Igra vjesalo. 
+ nap. Fran Lovricic
