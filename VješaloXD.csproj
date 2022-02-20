@@ -132,6 +132,9 @@
     <Compile Include="singleplayer.xaml.cs">
       <DependentUpon>singleplayer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="singleplayerLevel.xaml.cs">
+      <DependentUpon>singleplayerLevel.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -166,6 +169,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="singleplayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="singleplayerLevel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
