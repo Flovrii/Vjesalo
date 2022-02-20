@@ -30,144 +30,19 @@ namespace VješaloXD
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void gumbLevel1_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 1;
-            rijec = arrayRijec[globalIzbor];
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+
+
+        /*private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(singleplayerLevel));
             globalIzbor = 2;
             rijec = arrayRijec[globalIzbor];
-        }
+        }*/
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 3; 
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 4;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 5;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 6;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_6(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 7;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_7(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 8;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_8(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 9;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_9(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 10;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_10(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 11;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_11(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 12;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_12(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 13;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_13(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 14; 
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_14(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 15;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_15(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 16;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_16(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 17;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_17(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 18;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_18(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 19;
-            rijec = arrayRijec[globalIzbor];
-        }
-
-        private void Button_Click_19(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 20;
-            rijec = arrayRijec[globalIzbor];
-        }
     }
 }

@@ -26,17 +26,23 @@ namespace VješaloXD
         {
             this.InitializeComponent();
         }
-        public void testIzbora()
+        public int count = 0; // treba za zbroj za ispis _ u textblock
+        public string rijec2 = "tost";
+        public string[] arrIspis;
+        public string temp;
+        private void gumbPrikaz_Click(object sender, RoutedEventArgs e)
         {
-            string izabranaRijec;
-
-            for(int i=0;i<20;i++)
+            for (int i = 0; i < rijec2.Length; i++)
             {
-                if (MainPage.globalIzbor == i)
-                {
-                    izabranaRijec = arrRijeci[i];
-                }
+                count++;
             }
+            for (int i=0;i<count;i++)
+            {
+                temp += "_ ";
+            }
+            ispisRijeci.Text = temp;
         }
+
+        
     }
 }
