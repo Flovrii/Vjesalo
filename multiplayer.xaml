@@ -9,7 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="povratak_button" Background="red" FontSize="50" Content="Povratak" Height="83" Margin="45,45,0,0" VerticalAlignment="Top" Width="246" Click="Button_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="assets/backg.jpg" AlignmentY="Top" AlignmentX="Center" ></ImageBrush>
+        </Grid.Background>
+        <Button x:Name="povratak_button" Foreground="black" Background="white" FontSize="50" Content="Povratak" Height="83" Margin="45,45,0,0" VerticalAlignment="Top" Width="246" Click="Button_Click"/>
 
     </Grid>
 </Page>

@@ -8,10 +8,13 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="black">
-        <Button x:Name="Play" Background="green" Content="Play" Margin="0,334,0,0" VerticalAlignment="Top" Height="206" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Play_Click"/>
-        <Button x:Name="Quit" Background="red" Content="Quit" Margin="0,583,0,0" VerticalAlignment="Top" Height="197" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Quit_Click"/>
-        <TextBlock FontSize="100" HorizontalAlignment="Left" Margin="816,89,0,0" Text="Vješalo " TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="350"/>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="assets/backg.jpg" AlignmentY="Top" AlignmentX="Center" ></ImageBrush>
+        </Grid.Background>
+        <Button x:Name="Play" Foreground="black"  Background="white" Content="Play" Margin="0,334,0,0" VerticalAlignment="Top" Height="166" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Play_Click"/>
+        <Button x:Name="Quit" Foreground="black" Background="white" Content="Quit" Margin="0,547,0,0" VerticalAlignment="Top" Height="166" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Quit_Click"/>
+        <TextBlock FontSize="100" HorizontalAlignment="Left" Margin="803,89,0,0" Text="Vješalo " TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="350"/>
 
     </Grid>
 </Page>
