@@ -30,6 +30,5 @@
         <Button x:Name="gumbLevel15" Content="Level 15" Margin="1470,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
         <Button x:Name="gumbLevel19" Content="Level 19" Margin="1180,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
         <Button x:Name="gumbLevel20" Content="Level 20" Margin="1470,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-
     </Grid>
 </Page>

@@ -42,7 +42,5 @@ namespace VješaloXD
             }
             ispisRijeci.Text = temp;
         }
-
-        
     }
 }
