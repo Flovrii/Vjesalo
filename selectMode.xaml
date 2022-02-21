@@ -9,8 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="Singleplayer" Content="Singleplayer" Margin="0,334,0,0" VerticalAlignment="Top" Height="206" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Singleplayer_Click"/>
-        <Button x:Name="Multiplayer" Content="Multiplayer" Margin="0,583,0,0" VerticalAlignment="Top" Height="197" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Multiplayer_Click"/>
+        <Button x:Name="Singleplayer" Background="green" Content="Singleplayer" Margin="0,334,0,0" VerticalAlignment="Top" Height="206" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Singleplayer_Click"/>
+        <Button x:Name="Multiplayer" Background="green" Content="Multiplayer" Margin="0,583,0,0" VerticalAlignment="Top" Height="197" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Multiplayer_Click"/>
+        <Button x:Name="povratak_button" Background="red" FontSize="50" Content="Povratak" Height="83" Margin="45,45,0,0" VerticalAlignment="Top" Width="246" Click="Button_Click"/>
 
     </Grid>
 </Page>

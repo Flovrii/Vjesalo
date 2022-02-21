@@ -8,9 +8,10 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Button x:Name="Play" Content="Play" Margin="0,334,0,0" VerticalAlignment="Top" Height="206" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Play_Click"/>
-        <Button x:Name="Quit" Content="Quit" Margin="0,583,0,0" VerticalAlignment="Top" Height="197" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Quit_Click"/>
+    <Grid Background="black">
+        <Button x:Name="Play" Background="green" Content="Play" Margin="0,334,0,0" VerticalAlignment="Top" Height="206" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Play_Click"/>
+        <Button x:Name="Quit" Background="red" Content="Quit" Margin="0,583,0,0" VerticalAlignment="Top" Height="197" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Quit_Click"/>
+        <TextBlock FontSize="100" HorizontalAlignment="Left" Margin="816,89,0,0" Text="Vješalo " TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="350"/>
 
     </Grid>
 </Page>

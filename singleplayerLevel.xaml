@@ -9,12 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:Name="ispisRijeci" HorizontalAlignment="Left" Margin="886,50,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="300" FontSize="36" TextAlignment="Center"/>
-        <Button x:Name="gumbPrikaz" Content="Prikaži riječ" Margin="793,60,0,0" VerticalAlignment="Top" Height="48" Width="93" Click="gumbPrikaz_Click"/>
+        <TextBlock x:Name="ispisRijeci" HorizontalAlignment="Left" Margin="916,56,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="326" FontSize="35" TextAlignment="Center"/>
+        <Button FontSize="35" x:Name="gumbPrikaz" Content="Prikaži riječ" Margin="704,45,0,0" VerticalAlignment="Top" Height="68" Width="215" Click="gumbPrikaz_Click"/>
         <Image x:Name="ispisZivota" HorizontalAlignment="Center" Height="469" Margin="0,159,0,0" VerticalAlignment="Top" Width="619"/>
         <TextBlock HorizontalAlignment="Left" Margin="782,633,0,0" Text="UpisRijeci" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="388"/>
         <TextBlock HorizontalAlignment="Left" Margin="234,774,0,0" Text="upis pogodjenog" TextWrapping="Wrap" VerticalAlignment="Top" Height="169" Width="310"/>
         <TextBlock HorizontalAlignment="Left" Margin="1347,759,0,0" Text="IspisFulanog" TextWrapping="Wrap" VerticalAlignment="Top" Height="175" Width="346"/>
+        <Button x:Name="povratak_button" Background="red" FontSize="50" Content="Povratak" Height="83" Margin="45,45,0,0" VerticalAlignment="Top" Width="246" Click="Button_Click"/>
 
     </Grid>
 </Page>

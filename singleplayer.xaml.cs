@@ -35,6 +35,11 @@ namespace VješaloXD
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(selectMode));
+        }
+
 
 
         /*private void Button_Click_1(object sender, RoutedEventArgs e)
