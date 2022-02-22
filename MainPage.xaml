@@ -16,6 +16,5 @@
         <Button x:Name="Quit" Foreground="black" Background="white" Content="Quit" Margin="0,547,0,0" VerticalAlignment="Top" Height="166" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Quit_Click"/>
         <TextBlock FontSize="100" HorizontalAlignment="Left" Margin="803,89,0,0" Text="Vješalo " TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="350"/>
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
-        <ComboBox Margin="-333,630,0,0" Width="120"/>
     </Grid>
 </Page>
