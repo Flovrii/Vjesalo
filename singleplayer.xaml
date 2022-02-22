@@ -33,6 +33,7 @@
         <Button x:Name="gumbLevel15" Foreground="black" Background="white" Content="Level 15" Margin="1470,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
         <Button x:Name="gumbLevel19" Foreground="black" Background="white" Content="Level 19" Margin="1180,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
         <Button x:Name="gumbLevel20" Foreground="black" Background="white" Content="Level 20" Margin="1470,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-        <Button x:Name="povratak_button" Foreground="black" Background="white" FontSize="50" Content="Povratak" Height="83" Margin="45,45,0,0" VerticalAlignment="Top" Width="246" Click="Button_Click"/>
+        <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
+        <Button x:Name="povratak_button" Foreground="black" Background="white" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
     </Grid>
 </Page>

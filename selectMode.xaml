@@ -14,6 +14,7 @@
         </Grid.Background>
         <Button x:Name="Singleplayer" Foreground="black" Background="white" Content="Singleplayer" Margin="0,334,0,0" VerticalAlignment="Top" Height="205" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Singleplayer_Click"/>
         <Button x:Name="Multiplayer" Foreground="black" Background="white" Content="Multiplayer" Margin="0,583,0,0" VerticalAlignment="Top" Height="205" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Multiplayer_Click"/>
-        <Button x:Name="povratak_button" Foreground="black" Background="white" FontSize="50" Content="Povratak" Height="83" Margin="45,45,0,0" VerticalAlignment="Top" Width="246" Click="Button_Click"/>
+        <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
+        <Button x:Name="povratak_button" Foreground="black" Background="white" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
     </Grid>
 </Page>
