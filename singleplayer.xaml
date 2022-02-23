@@ -9,9 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="assets/backg.jpg" AlignmentY="Top" AlignmentX="Center" ></ImageBrush>
-        </Grid.Background>
         <TextBlock x:Name="naslov" HorizontalAlignment="Left" Margin="820,52,0,0" Text="Levels" TextWrapping="Wrap" VerticalAlignment="Top" Height="161" Width="349" FontSize="128px"/>
         <Button x:Name="gumbLevel1" Foreground="black" Background="white" Content="Level 1" Margin="310,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel1_Click"/>
         <Button x:Name="gumbLevel2" Foreground="black" Background="white" Content="Level 2" Margin="600,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
@@ -35,5 +32,6 @@
         <Button x:Name="gumbLevel20" Foreground="black" Background="white" Content="Level 20" Margin="1470,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
         <Button x:Name="povratak_button" Foreground="black" Background="white" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
+        
     </Grid>
 </Page>

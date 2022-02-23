@@ -9,12 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="assets/backg.jpg" AlignmentY="Top" AlignmentX="Center" ></ImageBrush>
-        </Grid.Background>
-        <Button x:Name="Singleplayer" Foreground="black" Background="white" Content="Singleplayer" Margin="0,334,0,0" VerticalAlignment="Top" Height="205" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Singleplayer_Click"/>
-        <Button x:Name="Multiplayer" Foreground="black" Background="white" Content="Multiplayer" Margin="0,583,0,0" VerticalAlignment="Top" Height="205" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Multiplayer_Click"/>
+        <Button x:Name="Singleplayer" Foreground="white" Background="black" Content="Singleplayer" Margin="0,334,0,0" VerticalAlignment="Top" Height="205" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Singleplayer_Click" FontWeight="Bold"/>
+        <Button x:Name="Multiplayer" Foreground="white" Background="black" Content="Multiplayer" Margin="0,583,0,0" VerticalAlignment="Top" Height="205" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Multiplayer_Click" FontWeight="Bold"/>
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
-        <Button x:Name="povratak_button" Foreground="black" Background="white" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
+        <Button x:Name="povratak_button" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click" FontWeight="Bold"/>
+        <Image Source="assets/ph1.jpg" HorizontalAlignment="Left" Margin="109,312,0,133" Width="539"/>
     </Grid>
 </Page>

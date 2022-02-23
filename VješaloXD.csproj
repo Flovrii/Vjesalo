@@ -142,10 +142,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\arrow.jpg" />
     <Content Include="Assets\backg.jpg" />
     <Content Include="Assets\click.wav" />
+    <Content Include="Assets\htitle.jpg" />
     <Content Include="Assets\music.mp3" />
+    <Content Include="Assets\ph1.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
