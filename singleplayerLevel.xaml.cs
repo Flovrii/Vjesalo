@@ -27,12 +27,16 @@ namespace VješaloXD
             this.InitializeComponent();
         }
         public int count = 0; // treba za zbroj za ispis _ u textblock
-        public string rijec2 = "tost";
+        public string rijecZaPog;
         public string[] arrIspis;
+        public string[] arrayRijec = { "slon", "bambi", "bmw", "eminem", "nogomet", "aligator", "chevrolet", "ghostbusters", "metallica", "badminton", "majmun", "lexus", "jumanji", "subaru", "titanic", "hrvanje", "mitsubishi", "pingvin", "odbojka", "nirvana" };
         public string temp;
+        public string[] arrayFulano;
         private void gumbPrikaz_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < rijec2.Length; i++)
+            int temp2 = singleplayer.globalIzbor;
+            rijecZaPog = arrayRijec[temp2];
+            for (int i = 0; i < rijecZaPog.Length; i++)
             {
                 count++;
             }
@@ -47,5 +51,6 @@ namespace VješaloXD
         {
             this.Frame.Navigate(typeof(singleplayer));
         }
+
     }
 }

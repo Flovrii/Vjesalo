@@ -24,7 +24,6 @@ namespace VješaloXD
     {
         public static int globalIzbor;
         public string rijec;
-        public string[] arrayRijec = {"slon", "bambi", "bmw","eminem" ,"nogomet" ,"aligator" ,"chevrolet" ,"ghostbusters" ,"metallica" ,"badminton","majmun" ,"lexus" ,"jumanji","subaru","titanic","hrvanje","mitsubishi","pingvin","odbojka","nirvana" };
         public singleplayer()
         {
             this.InitializeComponent();
@@ -33,21 +32,125 @@ namespace VješaloXD
         private void gumbLevel1_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(singleplayerLevel));
+            globalIzbor = 1;
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(selectMode));
         }
 
-
-
-        /*private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void gumbLevel3_Click(object sender, RoutedEventArgs e)
         {
+            globalIzbor = 3;
             this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 2;
-            rijec = arrayRijec[globalIzbor];
-        }*/
+        }
 
+        private void gumbLevel4_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 4;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel5_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 5;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel2_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 2;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel6_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 6;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel7_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 7;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel8_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 8;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel9_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 9;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel10_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 10;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel11_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 11;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel12_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 12;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel13_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 13;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel14_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 14;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel15_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 15;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel16_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 16;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel17_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 17;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel18_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 18;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel19_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 19;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
+
+        private void gumbLevel20_Click(object sender, RoutedEventArgs e)
+        {
+            globalIzbor = 20;
+            this.Frame.Navigate(typeof(singleplayerLevel));
+        }
     }
 }
