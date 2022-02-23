@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="#000000"> 
         <Button x:Name="Singleplayer" CornerRadius="10" Foreground="white" Background="black" Content="Singleplayer" Margin="0,334,0,0" VerticalAlignment="Top" Height="170" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Singleplayer_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <Button x:Name="Multiplayer" CornerRadius="10" Foreground="white" Background="black" Content="Multiplayer" Margin="0,583,0,0" VerticalAlignment="Top" Height="170" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Multiplayer_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music1.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />

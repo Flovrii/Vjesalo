@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="#000000">
         <TextBlock x:Name="naslov" HorizontalAlignment="Left" Margin="820,52,0,0" Text="Levels" TextWrapping="Wrap" VerticalAlignment="Top" Height="161" Width="349" FontSize="128px" FontFamily="Bradley Hand ITC" FontWeight="Normal"/>
         <Button x:Name="gumbLevel1" CornerRadius="10" Foreground="white" Background="black" Content="Level 1" Margin="310,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="60" Click="gumbLevel1_Click" FontFamily="Bradley Hand ITC"/>
         <Button x:Name="gumbLevel2" CornerRadius="10" Foreground="white" Background="black" Content="Level 2" Margin="600,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel2_Click" FontFamily="Bradley Hand ITC"/>

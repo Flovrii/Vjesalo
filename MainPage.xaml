@@ -8,9 +8,9 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Button x:Name="Play" CornerRadius="10" Foreground="White"  Background="black" Content="Play" Margin="0,407,0,0" VerticalAlignment="Top" Height="135" Width="300" HorizontalAlignment="Center" FontSize="92" Click="Play_Click" ClickMode="Release" AllowDrop="True" Padding="7,4,8,5" FontWeight="Normal" FontStyle="Normal" FontFamily="Bradley Hand ITC"/>
-        <Button x:Name="Quit" CornerRadius="10" Foreground="white" Background="black" Content="Quit" Margin="0,630,0,0" VerticalAlignment="Top" Height="135" Width="300" HorizontalAlignment="Center" FontSize="92" Click="Quit_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
+    <Grid Background="#000000">
+        <Button x:Name="Play" CornerRadius="10" Foreground="White"  Background="Black" Content="Play" Margin="0,407,0,0" VerticalAlignment="Top" Height="135" Width="300" HorizontalAlignment="Center" FontSize="92" Click="Play_Click" ClickMode="Release" AllowDrop="True" Padding="7,4,8,5" FontWeight="Normal" FontStyle="Normal" FontFamily="Bradley Hand ITC" FocusVisualPrimaryBrush="#FF333333"/>
+        <Button x:Name="Quit" CornerRadius="10" Foreground="white" Background="black" Content="Quit" Margin="0,630,0,0" VerticalAlignment="Top" Height="135" Width="300" HorizontalAlignment="Center" FontSize="92" Click="Quit_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC" FocusVisualPrimaryBrush="#FF333333"/>
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music1.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
         <Image Source="assets/htitle.jpg" Margin="617,24,617,744"/>
         <Image Source="assets/rope1.png" HorizontalAlignment="Left" Margin="10,-138,0,583" Width="539"/>
