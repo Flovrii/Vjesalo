@@ -30,7 +30,7 @@
         <Button x:Name="gumbLevel15" CornerRadius="10" Foreground="white" Background="black" Content="Level 15" Margin="1470,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel15_Click" FontFamily="Bradley Hand ITC" />
         <Button x:Name="gumbLevel19" CornerRadius="10" Foreground="white" Background="black" Content="Level 19" Margin="1180,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel19_Click" FontFamily="Bradley Hand ITC" />
         <Button x:Name="gumbLevel20" CornerRadius="10" Foreground="white" Background="black" Content="Level 20" Margin="1470,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel20_Click" FontFamily="Bradley Hand ITC" />
-        <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
+        <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music1.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
         <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
 
     </Grid>
