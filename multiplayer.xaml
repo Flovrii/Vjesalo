@@ -9,10 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="assets/backg.jpg" AlignmentY="Top" AlignmentX="Center" ></ImageBrush>
-        </Grid.Background>
-        <Button x:Name="povratak_button" Foreground="black" Background="white" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
+        <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
     </Grid>
 </Page>

@@ -9,10 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="Singleplayer" Foreground="white" Background="black" Content="Singleplayer" Margin="0,334,0,0" VerticalAlignment="Top" Height="205" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Singleplayer_Click" FontWeight="Bold"/>
-        <Button x:Name="Multiplayer" Foreground="white" Background="black" Content="Multiplayer" Margin="0,583,0,0" VerticalAlignment="Top" Height="205" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Multiplayer_Click" FontWeight="Bold"/>
+        <Button x:Name="Singleplayer" CornerRadius="10" Foreground="white" Background="black" Content="Singleplayer" Margin="0,334,0,0" VerticalAlignment="Top" Height="170" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Singleplayer_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
+        <Button x:Name="Multiplayer" CornerRadius="10" Foreground="white" Background="black" Content="Multiplayer" Margin="0,583,0,0" VerticalAlignment="Top" Height="170" Width="500" HorizontalAlignment="Center" FontSize="72" Click="Multiplayer_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
-        <Button x:Name="povratak_button" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click" FontWeight="Bold"/>
-        <Image Source="assets/ph1.jpg" HorizontalAlignment="Left" Margin="109,312,0,133" Width="539"/>
+        <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
+        <Image Source="/Assets/ph1.jpg" HorizontalAlignment="Left" Margin="109,312,0,133" Width="539"/>
+        <TextBlock x:Name="naslov" HorizontalAlignment="Left" Margin="816,45,0,0" Text="Mods" TextWrapping="Wrap" VerticalAlignment="Top" Height="161" Width="349" FontSize="128px" FontFamily="Bradley Hand ITC" FontWeight="Normal"/>
     </Grid>
 </Page>

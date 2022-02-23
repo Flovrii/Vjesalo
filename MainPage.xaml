@@ -9,8 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="Play" Foreground="White"  Background="black" Content="Play" Margin="0,334,0,0" VerticalAlignment="Top" Height="166" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Play_Click" ClickMode="Release" AllowDrop="True" Padding="7,4,8,5" FontWeight="Bold" FontStyle="Normal"/>
-        <Button x:Name="Quit" Foreground="white" Background="black" Content="Quit" Margin="0,547,0,0" VerticalAlignment="Top" Height="166" Width="392" HorizontalAlignment="Center" FontSize="72" Click="Quit_Click" FontWeight="Bold"/>
+        <Button x:Name="Play" CornerRadius="10" Foreground="White"  Background="black" Content="Play" Margin="0,407,0,0" VerticalAlignment="Top" Height="135" Width="300" HorizontalAlignment="Center" FontSize="92" Click="Play_Click" ClickMode="Release" AllowDrop="True" Padding="7,4,8,5" FontWeight="Normal" FontStyle="Normal" FontFamily="Bradley Hand ITC"/>
+        <Button x:Name="Quit" CornerRadius="10" Foreground="white" Background="black" Content="Quit" Margin="0,630,0,0" VerticalAlignment="Top" Height="135" Width="300" HorizontalAlignment="Center" FontSize="92" Click="Quit_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
         <Image Source="assets/htitle.jpg" Margin="617,24,617,744"/>
         <Image Source="assets/ph1.jpg" HorizontalAlignment="Left" Margin="109,312,0,133" Width="539"/>
