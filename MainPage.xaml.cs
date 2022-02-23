@@ -32,9 +32,16 @@ namespace VješaloXD
             this.InitializeComponent();
         }
 
-        private void Quit_Click(object sender, RoutedEventArgs e)
+        private async void Quit_Click(object sender, RoutedEventArgs e)
         {
+            MediaElement mySound = new MediaElement();
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("click.wav");
+            var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            mySound.SetSource(stream, file.ContentType);
+            mySound.Play();
             System.Environment.Exit(0);
+
         }
 
         private async void Play_Click(object sender, RoutedEventArgs e)

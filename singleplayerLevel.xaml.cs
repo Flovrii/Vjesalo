@@ -47,8 +47,14 @@ namespace VješaloXD
             ispisRijeci.Text = temp;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            MediaElement mySound = new MediaElement();
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("click.wav");
+            var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            mySound.SetSource(stream, file.ContentType);
+            mySound.Play();
             this.Frame.Navigate(typeof(singleplayer));
         }
 
