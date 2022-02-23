@@ -41,7 +41,7 @@ namespace VješaloXD
         {
             MediaElement mySound = new MediaElement();
             Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
-            Windows.Storage.StorageFile file = await folder.GetFileAsync("mySound.wav");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("click.wav");
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
