@@ -14,25 +14,25 @@
         </Grid.Background>
         <TextBlock x:Name="naslov" HorizontalAlignment="Left" Margin="820,52,0,0" Text="Levels" TextWrapping="Wrap" VerticalAlignment="Top" Height="161" Width="349" FontSize="128px"/>
         <Button x:Name="gumbLevel1" Foreground="black" Background="white" Content="Level 1" Margin="310,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel1_Click"/>
-        <Button x:Name="gumbLevel2" Foreground="black" Background="white" Content="Level 2" Margin="600,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
-        <Button x:Name="gumbLevel3" Foreground="black" Background="white" Content="Level 3" Margin="890,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
-        <Button x:Name="gumbLevel4" Foreground="black" Background="white" Content="Level 4" Margin="1180,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
-        <Button x:Name="gumbLevel5" Foreground="black" Background="white" Content="Level 5" Margin="1470,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" RenderTransformOrigin="-0.172,0.386"/>
-        <Button x:Name="gumbLevel6" Foreground="black" Background="white" Content="Level 6" Margin="310,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" />
-        <Button x:Name="gumbLevel7" Foreground="black" Background="white" Content="Level 7" Margin="600,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" />
-        <Button x:Name="gumbLevel8" Foreground="black" Background="white" Content="Level 8" Margin="890,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" />
-        <Button x:Name="gumbLevel9" Foreground="black" Background="white" Content="Level 9" Margin="1180,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" />
-        <Button x:Name="gumbLevel10" Foreground="black" Background="white" Content="Level 10" Margin="1470,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" />
-        <Button x:Name="gumbLevel11" Foreground="black" Background="white" Content="Level 11" Margin="310,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-        <Button x:Name="gumbLevel16" Foreground="black" Background="white" Content="Level 16" Margin="310,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px"/>
-        <Button x:Name="gumbLevel17" Foreground="black" Background="white" Content="Level 17" Margin="600,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-        <Button x:Name="gumbLevel12" Foreground="black" Background="white" Content="Level 12" Margin="600,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-        <Button x:Name="gumbLevel13" Foreground="black" Background="white" Content="Level 13" Margin="890,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-        <Button x:Name="gumbLevel18" Foreground="black" Background="white" Content="Level 18" Margin="890,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-        <Button x:Name="gumbLevel14" Foreground="black" Background="white" Content="Level 14" Margin="1180,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-        <Button x:Name="gumbLevel15" Foreground="black" Background="white" Content="Level 15" Margin="1470,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-        <Button x:Name="gumbLevel19" Foreground="black" Background="white" Content="Level 19" Margin="1180,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
-        <Button x:Name="gumbLevel20" Foreground="black" Background="white" Content="Level 20" Margin="1470,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" />
+        <Button x:Name="gumbLevel2" Foreground="black" Background="white" Content="Level 2" Margin="600,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel2_Click"/>
+        <Button x:Name="gumbLevel3" Foreground="black" Background="white" Content="Level 3" Margin="890,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel3_Click"/>
+        <Button x:Name="gumbLevel4" Foreground="black" Background="white" Content="Level 4" Margin="1180,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel4_Click"/>
+        <Button x:Name="gumbLevel5" Foreground="black" Background="white" Content="Level 5" Margin="1470,300,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" RenderTransformOrigin="-0.172,0.386" Click="gumbLevel5_Click"/>
+        <Button x:Name="gumbLevel6" Foreground="black" Background="white" Content="Level 6" Margin="310,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" Click="gumbLevel6_Click" />
+        <Button x:Name="gumbLevel7" Foreground="black" Background="white" Content="Level 7" Margin="600,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" Click="gumbLevel7_Click" />
+        <Button x:Name="gumbLevel8" Foreground="black" Background="white" Content="Level 8" Margin="890,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" Click="gumbLevel8_Click" />
+        <Button x:Name="gumbLevel9" Foreground="black" Background="white" Content="Level 9" Margin="1180,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" Click="gumbLevel9_Click" />
+        <Button x:Name="gumbLevel10" Foreground="black" Background="white" Content="Level 10" Margin="1470,420,0,0" Height="100" Width="205" FontSize="52px" VerticalAlignment="Top" Click="gumbLevel10_Click" />
+        <Button x:Name="gumbLevel11" Foreground="black" Background="white" Content="Level 11" Margin="310,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel11_Click" />
+        <Button x:Name="gumbLevel16" Foreground="black" Background="white" Content="Level 16" Margin="310,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel16_Click"/>
+        <Button x:Name="gumbLevel17" Foreground="black" Background="white" Content="Level 17" Margin="600,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel17_Click" />
+        <Button x:Name="gumbLevel12" Foreground="black" Background="white" Content="Level 12" Margin="600,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel12_Click" />
+        <Button x:Name="gumbLevel13" Foreground="black" Background="white" Content="Level 13" Margin="890,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel13_Click" />
+        <Button x:Name="gumbLevel18" Foreground="black" Background="white" Content="Level 18" Margin="890,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel18_Click" />
+        <Button x:Name="gumbLevel14" Foreground="black" Background="white" Content="Level 14" Margin="1180,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel14_Click" />
+        <Button x:Name="gumbLevel15" Foreground="black" Background="white" Content="Level 15" Margin="1470,540,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel15_Click" />
+        <Button x:Name="gumbLevel19" Foreground="black" Background="white" Content="Level 19" Margin="1180,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel19_Click" />
+        <Button x:Name="gumbLevel20" Foreground="black" Background="white" Content="Level 20" Margin="1470,660,0,0" VerticalAlignment="Top" Height="100" Width="205" FontSize="52px" Click="gumbLevel20_Click" />
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
         <Button x:Name="povratak_button" Foreground="black" Background="white" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
     </Grid>
