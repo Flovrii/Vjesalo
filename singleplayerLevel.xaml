@@ -15,10 +15,10 @@
         <MediaElement x:Name="MediaPlayer1" IsLooping="True" Source="Assets/music1.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
         <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <Image Source="/Assets/rope1.png" Margin="1371,-141,10,586"/>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20">
-            <StackPanel x:Name="firstRow" Orientation="Horizontal" HorizontalAlignment="Center"/>
-            <StackPanel x:Name="secondRow" Orientation="Horizontal" HorizontalAlignment="Center"/>
-            <StackPanel x:Name="thirdRow" Orientation="Horizontal" HorizontalAlignment="Center"/>
+        <StackPanel CornerRadius="10" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20">
+            <StackPanel x:Name="firstRow" CornerRadius="10" Orientation="Horizontal" HorizontalAlignment="Center"/>
+            <StackPanel x:Name="secondRow" CornerRadius="10" Orientation="Horizontal" HorizontalAlignment="Center"/>
+            <StackPanel x:Name="thirdRow" CornerRadius="10" Orientation="Horizontal" HorizontalAlignment="Center"/>
         </StackPanel>
     </Grid>
 </Page>

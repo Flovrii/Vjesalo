@@ -55,15 +55,15 @@ namespace VješaloXD
             firstRow.Children.Clear();
             secondRow.Children.Clear();
             thirdRow.Children.Clear();
-            for(int i=65;i<91;i++)
+            for (int i=65;i<91;i++)
             {
                 Button button = new Button()
                 {
                     Content = ((char)i).ToString(),
                     FontSize = 55,
-                    Width = 120,
-                    Height = 120,
-                    Margin = new Thickness(2)
+                    Width = 90,
+                    Height = 90,
+                    Margin = new Thickness(2),
                 };
                 button.Click += BT_Click_Key;
                 if (i % 65 < 8) firstRow.Children.Add(button);
