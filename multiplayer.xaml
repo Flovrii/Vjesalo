@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="#000000">
         <MediaElement x:Name="MediaPlayer" IsLooping="True" Source="Assets/music1.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
         <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <Image Source="/Assets/rope1.png" Margin="1371,-141,10,586"/>
