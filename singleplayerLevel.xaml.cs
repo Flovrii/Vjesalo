@@ -25,6 +25,7 @@ namespace VješaloXD
         public singleplayerLevel()
         {
             this.InitializeComponent();
+            CreateKeyboard();
         }
         public int count = 0; // treba za zbroj za ispis _ u textblock
         public string rijecZaPog;
@@ -45,6 +46,35 @@ namespace VješaloXD
                 temp += "_ ";
             }
             ispisRijeci.Text = temp;
+        }
+
+
+
+        private void CreateKeyboard()
+        {
+            firstRow.Children.Clear();
+            secondRow.Children.Clear();
+            thirdRow.Children.Clear();
+            for(int i=65;i<91;i++)
+            {
+                Button button = new Button()
+                {
+                    Content = ((char)i).ToString(),
+                    FontSize = 55,
+                    Width = 120,
+                    Height = 120,
+                    Margin = new Thickness(2)
+                };
+                button.Click += BT_Click_Key;
+                if (i % 65 < 8) firstRow.Children.Add(button);
+                else if (i % 65 >= 8 && i % 65 < 16) secondRow.Children.Add(button);
+                else thirdRow.Children.Add(button);
+            }
+        }
+
+        private void BT_Click_Key(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)

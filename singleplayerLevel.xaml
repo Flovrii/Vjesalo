@@ -12,10 +12,13 @@
         <TextBlock x:Name="ispisRijeci" HorizontalAlignment="Left" Margin="916,56,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="326" FontSize="35" TextAlignment="Center" FontFamily="Bradley Hand ITC"/>
         <Button Foreground="white" Background="black" CornerRadius="10" FontSize="35" x:Name="gumbPrikaz1" Content="Prikaži riječ" Margin="704,45,0,0" VerticalAlignment="Top" Height="68" Width="215" Click="gumbPrikaz_Click" FontFamily="Bradley Hand ITC"/>
         <Image x:Name="ispisZivota1" HorizontalAlignment="Center" Height="469" Margin="0,159,0,0" VerticalAlignment="Top" Width="619"/>
-        <TextBlock HorizontalAlignment="Left" Margin="782,674,0,0" Text="UpisRijeci" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="388" FontFamily="Bradley Hand ITC"/>
-        <TextBlock HorizontalAlignment="Left" Margin="651,796,0,0" Text="IspisFulanog" TextWrapping="Wrap" VerticalAlignment="Top" Height="165" Width="569" FontFamily="Bradley Hand ITC"/>
         <MediaElement x:Name="MediaPlayer1" IsLooping="True" Source="Assets/music1.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
         <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <Image Source="/Assets/rope1.png" Margin="1371,-141,10,586"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20">
+            <StackPanel x:Name="firstRow" Orientation="Horizontal" HorizontalAlignment="Center"/>
+            <StackPanel x:Name="secondRow" Orientation="Horizontal" HorizontalAlignment="Center"/>
+            <StackPanel x:Name="thirdRow" Orientation="Horizontal" HorizontalAlignment="Center"/>
+        </StackPanel>
     </Grid>
 </Page>
