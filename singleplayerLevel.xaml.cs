@@ -5,12 +5,14 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -26,17 +28,45 @@ namespace VješaloXD
         {
             this.InitializeComponent();
             CreateKeyboard();
+            images = new List<BitmapImage>();
+            LoadImage();
         }
         public int count = 0; // treba za zbroj za ispis _ u textblock
         public string rijecZaPog;
         public string[] arrIspis;
-        public string[] arrayRijec = { "slon", "bambi", "bmw", "eminem", "nogomet", "aligator", "chevrolet", "ghostbusters", "metallica", "badminton", "majmun", "lexus", "jumanji", "subaru", "titanic", "hrvanje", "mitsubishi", "pingvin", "odbojka", "nirvana" };
         public string temp;
-        public string[] arrayFulano;
+        string word;
+
+        List<Button> buttons;
+        List<BitmapImage> images;
+        private void LoadImage()
+        {
+            for(int i=0;i<7;i++)
+            {
+                var image = new BitmapImage(new Uri(@"ms-appx:/Images/pogreska" + i.ToString() + ".png"));
+                images.Add(image);
+            }
+        }
+        
+        private string RandomWord()
+        {
+            string[] words = { "slon", "bambi", "bmw", "eminem", "nogomet", "aligator", "chevrolet", "ghostbusters", "metallica", "badminton", "majmun", "lexus", "jumanji", "subaru", "titanic", "hrvanje", "mitsubishi", "pingvin", "odbojka", "nirvana" };
+            Random r = new Random();
+            return words[r.Next(words.Length)];
+        }
+        /*
+        private void DoWordArea()
+        {
+            CreateKeyboard();
+            this.word = RandomWord();
+            imageMiss.Source = images[0];
+        }*/
+
+
         private void gumbPrikaz_Click(object sender, RoutedEventArgs e)
         {
             int temp2 = singleplayer.globalIzbor;
-            rijecZaPog = arrayRijec[temp2];
+            rijecZaPog = RandomWord();
             for (int i = 0; i < rijecZaPog.Length; i++)
             {
                 count++;
@@ -52,6 +82,7 @@ namespace VješaloXD
 
         private void CreateKeyboard()
         {
+            buttons = new List<Button>();
             firstRow.Children.Clear();
             secondRow.Children.Clear();
             thirdRow.Children.Clear();
@@ -69,6 +100,7 @@ namespace VješaloXD
                 if (i % 65 < 8) firstRow.Children.Add(button);
                 else if (i % 65 >= 8 && i % 65 < 16) secondRow.Children.Add(button);
                 else thirdRow.Children.Add(button);
+                buttons.Add(button);
             }
         }
 
