@@ -31,6 +31,7 @@ namespace VješaloXD
             images = new List<BitmapImage>();
             LoadImage();
         }
+
         public int count = 0; // treba za zbroj za ispis _ u textblock
         public string rijecZaPog;
         public string[] arrIspis;
@@ -94,7 +95,9 @@ namespace VješaloXD
                     FontSize = 55,
                     Width = 90,
                     Height = 90,
+                    CornerRadius = new CornerRadius(10),
                     Margin = new Thickness(2),
+                    FontFamily = new FontFamily("Bradley Hand ITC"),
                 };
                 button.Click += BT_Click_Key;
                 if (i % 65 < 8) firstRow.Children.Add(button);
