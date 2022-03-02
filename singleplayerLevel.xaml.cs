@@ -152,7 +152,7 @@ namespace VješaloXD
             }
             if(counterMiss==6)
             {
-                MessageToUserAsync("Izgubio si!");
+                MessageToUserAsync("Krepo si!");
             }
             int count2 = 0;
             for(int i=0;i<this.word.Length;i++)
@@ -161,7 +161,7 @@ namespace VješaloXD
             }
             if(count2==this.word.Length)
             {
-                MessageToUserAsync("Čestitke! Pobjedio si");
+                MessageToUserAsync("Čestitke! Prošao si level!");
                 this.Frame.Navigate(typeof(singleplayer));
             }
             button.IsEnabled = false;
