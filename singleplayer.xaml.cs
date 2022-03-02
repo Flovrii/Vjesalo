@@ -38,7 +38,7 @@ namespace VješaloXD
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
             this.Frame.Navigate(typeof(singleplayerLevel));
-            globalIzbor = 1;
+            
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -49,6 +49,7 @@ namespace VješaloXD
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
             this.Frame.Navigate(typeof(selectMode));
+            
         }
 
         private async void gumbLevel3_Click(object sender, RoutedEventArgs e)

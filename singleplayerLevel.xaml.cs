@@ -25,15 +25,6 @@ namespace VješaloXD
     /// </summary>
     public sealed partial class singleplayerLevel : Page
     {
-        public singleplayerLevel()
-        {
-            this.InitializeComponent();
-            
-            images = new List<BitmapImage>();
-            LoadImage();
-            DoWordArea();
-        }
-
         public int count = 0; // treba za zbroj za ispis _ u textblock
         public string rijecZaPog;
         public string[] arrIspis;
@@ -44,10 +35,20 @@ namespace VješaloXD
         List<Button> buttons;
         List<BitmapImage> images;
         List<TextBlock> fieldChar;
+        public singleplayerLevel()
+        {
+            this.InitializeComponent();
+            
+            images = new List<BitmapImage>();
+            LoadImage();
+            DoWordArea();
+        }
+
+        
 
         private void LoadImage()
         {
-            for(int i=0;i<7;i++)
+            for(int i=1;i<=7;i++)
             {
                 var image = new BitmapImage(new Uri(@"ms-appx:/Images/pogreska" + i.ToString() + ".png"));
                 images.Add(image);
@@ -75,18 +76,20 @@ namespace VješaloXD
                 {
                     Text = "_",
                     Margin = new Thickness(10),
-                    FontSize = 50
+                    FontSize = 72,
+                   /* FontFamily = new FontFamily("Bradley Hand ITC"),*/
                 };
                 wordArea.Children.Add(textBlock);
                 fieldChar.Add(textBlock);
             }
-            fieldChar[0].Text = this.word[0].ToString(); // ovo je prvi char u rijeci
-            fieldChar[this.word.Length - 1].Text = this.word[this.word.Length - 1].ToString();// zadnje slovo
+            /*fieldChar[0].Text = this.word[0].ToString(); // ovo je prvi char u rijeci*/
+            /*fieldChar[this.word.Length - 1].Text = this.word[this.word.Length - 1].ToString();// zadnje slovo*/
         }
 
 
         private void gumbPrikaz_Click(object sender, RoutedEventArgs e)
         {
+            LoadImage();
             DoWordArea();
             /*int temp2 = singleplayer.globalIzbor;
             rijecZaPog = RandomWord();
@@ -134,7 +137,7 @@ namespace VješaloXD
             Button button = sender as Button;
             string character = button.Content.ToString();
             bool hit = false;
-            for (int i = 0; i < this.word.Length - 1; i++)
+            for (int i = 0; i < this.word.Length ; i++)
             {
                 if (this.word[i].ToString().ToLower() == character.ToLower())
                 {
@@ -149,7 +152,7 @@ namespace VješaloXD
             }
             if(counterMiss==6)
             {
-                MessageToUserAsync("You lose");
+                MessageToUserAsync("Izgubio si!");
             }
             int count2 = 0;
             for(int i=0;i<this.word.Length;i++)
@@ -158,14 +161,15 @@ namespace VješaloXD
             }
             if(count2==this.word.Length)
             {
-                MessageToUserAsync("You win");
+                MessageToUserAsync("Čestitke! Pobjedio si");
+                this.Frame.Navigate(typeof(singleplayer));
             }
             button.IsEnabled = false;
         }
 
         private async void MessageToUserAsync(string statement)
         {
-            MessageDialog messageDialog = new MessageDialog("Play again", statement);
+            MessageDialog messageDialog = new MessageDialog("Igraj ponovno!", statement);
             await messageDialog.ShowAsync();
             DoWordArea(); 
         }

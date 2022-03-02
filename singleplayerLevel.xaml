@@ -9,12 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="#000000">
-        <Button Foreground="white" Background="black" CornerRadius="10" FontSize="35" x:Name="gumbPrikaz1" Content="Restart" Margin="1371,43,0,0" VerticalAlignment="Top" Height="68" Width="215" Click="gumbPrikaz_Click" FontFamily="Bradley Hand ITC"/>
+        <Button Foreground="white" Background="black" CornerRadius="10" FontSize="35" x:Name="gumbPrikaz1" Content="Restart" Margin="61,125,0,0" VerticalAlignment="Top" Height="53" Width="137" Click="gumbPrikaz_Click" FontFamily="Bradley Hand ITC" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Button.RenderTransform>
+                <CompositeTransform SkewY="-0.528" TranslateY="0.991"/>
+            </Button.RenderTransform>
+        </Button>
         <MediaElement x:Name="MediaPlayer1" IsLooping="True" Source="Assets/music1.mp3" AudioCategory="BackgroundCapableMedia" AutoPlay="True" />
         <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <Image Source="/Assets/rope1.png" Margin="1371,-141,10,586"/>
         <StackPanel x:Name="wordArea" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal"/>
-        <Image x:Name="imageMiss" Source="Images/pogreska1.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,177,0,0" Height="578"  Width="933"/>
+        <Image x:Name="imageMiss" Source="Images/pogreska1.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,177,0,0" Height="636"  Width="900"/>
         <StackPanel CornerRadius="10" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20">
             <StackPanel x:Name="firstRow" CornerRadius="10" Orientation="Horizontal" HorizontalAlignment="Center"/>
             <StackPanel x:Name="secondRow" CornerRadius="10" Orientation="Horizontal" HorizontalAlignment="Center"/>
