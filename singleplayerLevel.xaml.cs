@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -27,9 +28,10 @@ namespace VješaloXD
         public singleplayerLevel()
         {
             this.InitializeComponent();
-            CreateKeyboard();
+            
             images = new List<BitmapImage>();
             LoadImage();
+            DoWordArea();
         }
 
         public int count = 0; // treba za zbroj za ispis _ u textblock
@@ -37,9 +39,12 @@ namespace VješaloXD
         public string[] arrIspis;
         public string temp;
         string word;
+        int counterMiss = 0;
 
         List<Button> buttons;
         List<BitmapImage> images;
+        List<TextBlock> fieldChar;
+
         private void LoadImage()
         {
             for(int i=0;i<7;i++)
@@ -55,18 +60,35 @@ namespace VješaloXD
             Random r = new Random();
             return words[r.Next(words.Length)];
         }
-        /*
+        
         private void DoWordArea()
         {
+            counterMiss = 0;
             CreateKeyboard();
             this.word = RandomWord();
             imageMiss.Source = images[0];
-        }*/
+            fieldChar = new List<TextBlock>();
+            wordArea.Children.Clear();
+            for(int i=0;i<this.word.Length;i++)
+            {
+                TextBlock textBlock = new TextBlock()
+                {
+                    Text = "_",
+                    Margin = new Thickness(10),
+                    FontSize = 50
+                };
+                wordArea.Children.Add(textBlock);
+                fieldChar.Add(textBlock);
+            }
+            fieldChar[0].Text = this.word[0].ToString(); // ovo je prvi char u rijeci
+            fieldChar[this.word.Length - 1].Text = this.word[this.word.Length - 1].ToString();// zadnje slovo
+        }
 
 
         private void gumbPrikaz_Click(object sender, RoutedEventArgs e)
         {
-            int temp2 = singleplayer.globalIzbor;
+            DoWordArea();
+            /*int temp2 = singleplayer.globalIzbor;
             rijecZaPog = RandomWord();
             for (int i = 0; i < rijecZaPog.Length; i++)
             {
@@ -76,7 +98,7 @@ namespace VješaloXD
             {
                 temp += "_ ";
             }
-            ispisRijeci.Text = temp;
+            ispisRijeci.Text = temp;*/
         }
 
 
@@ -109,7 +131,43 @@ namespace VješaloXD
 
         private void BT_Click_Key(object sender, RoutedEventArgs e)
         {
-            
+            Button button = sender as Button;
+            string character = button.Content.ToString();
+            bool hit = false;
+            for (int i = 0; i < this.word.Length - 1; i++)
+            {
+                if (this.word[i].ToString().ToLower() == character.ToLower())
+                {
+                    hit = true;
+                    fieldChar[i].Text = character.ToLower();
+                }
+            }
+            if(hit==false)
+            {
+                counterMiss += 1;
+                imageMiss.Source = images[counterMiss];
+            }
+            if(counterMiss==6)
+            {
+                MessageToUserAsync("You lose");
+            }
+            int count2 = 0;
+            for(int i=0;i<this.word.Length;i++)
+            {
+                if (fieldChar[i].Text != "_") count2++;
+            }
+            if(count2==this.word.Length)
+            {
+                MessageToUserAsync("You win");
+            }
+            button.IsEnabled = false;
+        }
+
+        private async void MessageToUserAsync(string statement)
+        {
+            MessageDialog messageDialog = new MessageDialog("Play again", statement);
+            await messageDialog.ShowAsync();
+            DoWordArea(); 
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
