@@ -130,7 +130,7 @@ namespace VješaloXD
             if (count2 == this.word.Length)
             {
                 MessageToUserAsync("Čestitke! Prošao si level!");
-                this.Frame.Navigate(typeof(singleplayer));
+                this.Frame.Navigate(typeof(MainPage));
             }
             button.IsEnabled = false;
         }
