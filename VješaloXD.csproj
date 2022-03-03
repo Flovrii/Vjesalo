@@ -146,6 +146,12 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\1._slika.png" />
+    <Content Include="Assets\2._slika.png" />
+    <Content Include="Assets\3._slika.png" />
+    <Content Include="Assets\4._slika.png" />
+    <Content Include="Assets\5._slika.png" />
+    <Content Include="Assets\6._slika.png" />
     <Content Include="Assets\click.wav" />
     <Content Include="Assets\htitle.jpg" />
     <Content Include="Assets\music1.mp3" />
