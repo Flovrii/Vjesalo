@@ -136,6 +136,9 @@
       <DependentUpon>singleplayerLevel.xaml</DependentUpon>
     </Compile>
     <Compile Include="System\Media.cs" />
+    <Compile Include="upisivanjeRijeci.xaml.cs">
+      <DependentUpon>upisivanjeRijeci.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -178,6 +181,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="singleplayerLevel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="upisivanjeRijeci.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

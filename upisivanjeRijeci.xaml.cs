@@ -20,14 +20,18 @@ namespace VješaloXD
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class selectMode : Page
+    public sealed partial class upisivanjeRijeci : Page
     {
-        public selectMode()
+        public upisivanjeRijeci()
         {
-            this.InitializeComponent(); 
+            this.InitializeComponent();
         }
+        public static class Global
+        {
+            public static string multiplayerRijec;
 
-        private async void Singleplayer_Click(object sender, RoutedEventArgs e)
+        }
+        private async void gumbDalje_Click(object sender, RoutedEventArgs e)
         {
             MediaElement mySound = new MediaElement();
             Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
@@ -35,10 +39,11 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            this.Frame.Navigate(typeof(singleplayer));
+            Global.multiplayerRijec = upisRijeci.Text;
+            this.Frame.Navigate(typeof(multiplayer));
         }
 
-        private async void Multiplayer_Click(object sender, RoutedEventArgs e)
+        private async void povratak_button_Click(object sender, RoutedEventArgs e)
         {
             MediaElement mySound = new MediaElement();
             Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
@@ -46,18 +51,7 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            this.Frame.Navigate(typeof(upisivanjeRijeci));
-        }
-
-        private async void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MediaElement mySound = new MediaElement();
-            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
-            Windows.Storage.StorageFile file = await folder.GetFileAsync("click.wav");
-            var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
-            mySound.SetSource(stream, file.ContentType);
-            mySound.Play();
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(selectMode));
         }
     }
 }
