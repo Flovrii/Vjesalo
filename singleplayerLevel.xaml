@@ -18,7 +18,7 @@
         <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <Image Source="/Assets/rope1.png" Margin="1371,-141,10,586"/>
         <StackPanel x:Name="wordArea" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal"/>
-        <Image x:Name="imageMiss" Source="Images/pogreska1.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,177,0,0" Height="636"  Width="900"/>
+        <Image x:Name="imageMiss" Source="slikice/slika1.png" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,297,0,0" Height="400"  Width="500"/>
         <StackPanel CornerRadius="10" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20">
             <StackPanel x:Name="firstRow" CornerRadius="10" Orientation="Horizontal" HorizontalAlignment="Center"/>
             <StackPanel x:Name="secondRow" CornerRadius="10" Orientation="Horizontal" HorizontalAlignment="Center"/>

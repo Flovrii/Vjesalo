@@ -42,7 +42,7 @@ namespace VješaloXD
         {
             for (int i = 1; i <= 7; i++)
             {
-                var image = new BitmapImage(new Uri(@"ms-appx:/Images/pogreska" + i.ToString() + ".png"));
+                var image = new BitmapImage(new Uri(@"ms-appx:/slikice/slika" + i.ToString() + ".png"));
                 images.Add(image);
             }
         }
@@ -120,7 +120,7 @@ namespace VješaloXD
             }
             if (counterMiss == 6)
             {
-                MessageToUserAsync("Krepo si!");
+                MessageToUserAsync("Obješen si!");
             }
             int count2 = 0;
             for (int i = 0; i < this.word.Length; i++)
@@ -129,7 +129,7 @@ namespace VješaloXD
             }
             if (count2 == this.word.Length)
             {
-                MessageToUserAsync("Čestitke! Prošao si level!");
+                MessageToUserAsync("Čestitke! Pogodio si riječ!");
                 this.Frame.Navigate(typeof(MainPage));
             }
             button.IsEnabled = false;

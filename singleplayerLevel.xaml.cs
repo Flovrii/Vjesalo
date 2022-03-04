@@ -25,10 +25,10 @@ namespace VješaloXD
     /// </summary>
     public sealed partial class singleplayerLevel : Page
     {
-        public int count = 0; // treba za zbroj za ispis _ u textblock
+       /* public int count = 0; // treba za zbroj za ispis _ u textblock
         public string rijecZaPog;
         public string[] arrIspis;
-        public string temp;
+        public string temp;*/
         string word;
         int counterMiss = 0;
 
@@ -38,18 +38,19 @@ namespace VješaloXD
         public singleplayerLevel()
         {
             this.InitializeComponent();
+            CreateKeyboard();
             images = new List<BitmapImage>();
             LoadImage();
             DoWordArea();
         }
 
-        
+
 
         private void LoadImage()
         {
-            for(int i=1;i<=7;i++)
+            for(int i=1;i<=6;i++)
             {
-                var image = new BitmapImage(new Uri(@"ms-appx:/Assets/slika" + i.ToString() + ".png"));
+                var image = new BitmapImage(new Uri(@"ms-appx:slikice/slika" + i.ToString() + ".png"));
                 images.Add(image);
             }
         }
@@ -63,12 +64,13 @@ namespace VješaloXD
         
         private void DoWordArea()
         {
-            counterMiss = 0;
             CreateKeyboard();
+            counterMiss = 0;
             this.word = RandomWord();
             imageMiss.Source = images[0];
             fieldChar = new List<TextBlock>();
             wordArea.Children.Clear();
+            LoadImage();
             for(int i=0;i<this.word.Length;i++)
             {
                 TextBlock textBlock = new TextBlock()
@@ -88,19 +90,7 @@ namespace VješaloXD
 
         private void gumbPrikaz_Click(object sender, RoutedEventArgs e)
         {
-            LoadImage();
             DoWordArea();
-            /*int temp2 = singleplayer.globalIzbor;
-            rijecZaPog = RandomWord();
-            for (int i = 0; i < rijecZaPog.Length; i++)
-            {
-                count++;
-            }
-            for (int i=0;i<count;i++)
-            {
-                temp += "_ ";
-            }
-            ispisRijeci.Text = temp;*/
         }
 
 
@@ -151,7 +141,7 @@ namespace VješaloXD
             }
             if(counterMiss==6)
             {
-                MessageToUserAsync("Krepo si!");
+                MessageToUserAsync("Obješen si!");
             }
             int count2 = 0;
             for(int i=0;i<this.word.Length;i++)
