@@ -38,7 +38,6 @@ namespace VješaloXD
         public singleplayerLevel()
         {
             this.InitializeComponent();
-            
             images = new List<BitmapImage>();
             LoadImage();
             DoWordArea();
@@ -50,7 +49,7 @@ namespace VješaloXD
         {
             for(int i=1;i<=7;i++)
             {
-                var image = new BitmapImage(new Uri(@"ms-appx:/Images/pogreska" + i.ToString() + ".png"));
+                var image = new BitmapImage(new Uri(@"ms-appx:/Assets/slika" + i.ToString() + ".png"));
                 images.Add(image);
             }
         }
