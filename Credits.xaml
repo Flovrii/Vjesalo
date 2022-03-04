@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="VješaloXD.Credits"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VješaloXD"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
+        <Image Source="/Assets/rope1.png" Margin="1371,-141,10,586"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,489,0,0" Text="Fran Lovričić" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="920,453,0,0" Text="Leon Musović" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="923,0,0,0" Text="Tin Marković" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="922,573,0,0" Text="Martin Dumić" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

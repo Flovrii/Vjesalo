@@ -134,7 +134,6 @@ namespace VješaloXD
             }
             button.IsEnabled = false;
         }
-
         private async void MessageToUserAsync(string statement)
         {
             MessageDialog messageDialog = new MessageDialog("Igraj ponovno!", statement);
