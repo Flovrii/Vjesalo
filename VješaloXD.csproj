@@ -22,7 +22,7 @@
     <PackageCertificateThumbprint>CAA655D649DF0BFD7FF8457BAC0621ADDECB60AC</PackageCertificateThumbprint>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxPackageDir>C:\Users\Fran\Desktop\Projektni\</AppxPackageDir>
+    <AppxPackageDir>D:\Testiranje\</AppxPackageDir>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
@@ -161,18 +161,18 @@
     <Content Include="Assets\BadgeLogo.scale-100.png" />
     <Content Include="Assets\click.wav" />
     <Content Include="Assets\htitle.jpg" />
-    <Content Include="Assets\ikona48x48.png" />
     <Content Include="Assets\music1.mp3" />
     <Content Include="Assets\rope1.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-lightunplated.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="slikice\slika0.png" />
     <Content Include="slikice\slika1.png" />
