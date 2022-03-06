@@ -48,7 +48,7 @@ namespace VješaloXD
             CreateKeyboard();
             images = new List<BitmapImage>();
             LoadImage();
-            DoWordArea();
+            izradaPolja();
         }
 
 
@@ -71,7 +71,7 @@ namespace VješaloXD
         
 
 
-        private void DoWordArea()
+        private void izradaPolja()
         {
             CreateKeyboard();
             counterMiss = 0;
@@ -87,19 +87,16 @@ namespace VješaloXD
                     Text = "_",
                     Margin = new Thickness(10),
                     FontSize = 72,
-                   /* FontFamily = new FontFamily("Bradley Hand ITC"),*/
                 };
                 wordArea.Children.Add(textBlock);
                 fieldChar.Add(textBlock);
             }
-            /*fieldChar[0].Text = this.word[0].ToString(); // ovo je prvi char u rijeci*/
-            /*fieldChar[this.word.Length - 1].Text = this.word[this.word.Length - 1].ToString();// zadnje slovo*/
         }
 
 
         private void gumbPrikaz_Click(object sender, RoutedEventArgs e)
         {
-            DoWordArea();
+            izradaPolja();
         }
         
 
@@ -171,7 +168,7 @@ namespace VješaloXD
         {
             MessageDialog messageDialog = new MessageDialog("Igraj ponovno!", statement);
             await messageDialog.ShowAsync();
-            DoWordArea(); 
+            izradaPolja(); 
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
