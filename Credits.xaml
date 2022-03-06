@@ -11,10 +11,10 @@
     <Grid>
         <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <Image Source="/Assets/rope1.png" Margin="1371,-141,10,586"/>
-        <TextBlock HorizontalAlignment="Left" Margin="602,284,0,0" Text="Fran Lovricic" FontSize="128px" TextWrapping="Wrap" VerticalAlignment="Top" Height="162" Width="731" FontFamily="Bradley Hand ITC"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,561,0,0" Text="Leon Musovic" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="48"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,643,0,0" Text="Tin Markovic" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="689,444,0,0" Text="Martin Dumic" FontSize="90px" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="648" FontFamily="Bradley Hand ITC"/>
+        <TextBlock HorizontalAlignment="Left" Margin="681,236,0,0" Text="Fran Lovricic" FontSize="100" TextWrapping="Wrap" VerticalAlignment="Top" Height="162" Width="731" FontFamily="Bradley Hand ITC"/>
+        <TextBlock HorizontalAlignment="Left" Margin="669,485,0,0" Text="Leon Musovic" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="676,621,0,0" Text="Tin Markovic" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="100" Width="581"/>
+        <TextBlock HorizontalAlignment="Left" Margin="659,361,0,0" Text="Martin Dumic" FontSize="100" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="802" FontFamily="Bradley Hand ITC"/>
 
     </Grid>
 </Page>
