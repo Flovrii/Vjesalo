@@ -10,7 +10,7 @@
 
     <Grid>
         <TextBlock x:Name="naslovSvega"   HorizontalAlignment="Left" Margin="525,199,0,0" Text="Enter your word" FontSize="128px" TextWrapping="Wrap" VerticalAlignment="Top" Height="238" Width="938" FontFamily="Bradley Hand ITC"/>
-        <TextBox x:Name="upisRijeci"  HorizontalAlignment="Left" Margin="610,540,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72px" Height="110" Width="700" BorderBrush="White" FontFamily="Bradley Hand ITC"/>
+        <TextBox x:Name="upisRijeci"  HorizontalAlignment="Left" Margin="610,540,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72px" Height="110" Width="700" BorderBrush="White" FontFamily="Bradley Hand ITC" TextChanged="upisRijeci_TextChanged"/>
         <TextBlock x:Name="Upozorenja" HorizontalAlignment="Left" Margin="435,407,0,560" Text="Don't enter numbers, special characters, spaces. It's one word per game." FontSize="36px" Width="1065" FontFamily="Bradley Hand ITC"/>
         <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" FontWeight="Normal" FontFamily="Bradley Hand ITC" Click="povratak_button_Click"/>
         <Button x:Name="gumbDalje" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Continue" Height="80" Margin="0,722,0,0" VerticalAlignment="Top" Width="244"  FontWeight="Normal" FontFamily="Bradley Hand ITC" HorizontalAlignment="Center" Click="gumbDalje_Click"/>

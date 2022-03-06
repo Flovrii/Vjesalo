@@ -63,14 +63,12 @@ namespace VješaloXD
         }
         private string RandomWord()
         {
-            string[] words = { "slon", "bambi", "bmw", "eminem", "nogomet", "aligator", "chevrolet", "ghostbusters", "metallica", "badminton", "majmun", "lexus", "jumanji", "subaru", "titanic", "hrvanje", "mitsubishi", "pingvin", "odbojka", "nirvana","zubar","denis","kukac","igrica","nogomet","program","kolodvor","lizalica","autocesta","prizemlje","odbojka","mitshubishi","slikarstvo","planinarenje","elektrotehnika","hidroelektrana","kontinentalnost","kinematografija","prijestolonasljednik","otorinolaringologija" };
+            string[] words = { "slon", "bambi", "bmw", "eminem", "nogomet", "aligator", "chevrolet", "ghostbusters", "metallica", "badminton", "majmun", "lexus", "jumanji", "subaru", "titanic", "hrvanje", "mitsubishi", "pingvin", "odbojka", "nirvana","zubar","denis","kukac","igrica","nogomet","program","kolodvor","lizalica","autocesta","prizemlje","odbojka","mitsubishi","slikarstvo","planinarenje","elektrotehnika","hidroelektrana","kontinentalnost","kinematografija","prijestolonasljednik","otorinolaringologija" };
             Random r = new Random();
             return words[r.Next(words.Length)];
         }
 
-        
-
-
+       
         private void izradaPolja()
         {
             CreateKeyboard();

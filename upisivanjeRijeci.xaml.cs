@@ -53,5 +53,10 @@ namespace VješaloXD
             mySound.Play();
             this.Frame.Navigate(typeof(selectMode));
         }
+
+        private void upisRijeci_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
