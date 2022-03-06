@@ -128,7 +128,7 @@ namespace VješaloXD
         }
         
 
-        private  void BT_Click_Key(object sender, RoutedEventArgs e)
+        private   void BT_Click_Key(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
             string character = button.Content.ToString();
@@ -148,6 +148,7 @@ namespace VješaloXD
             }
             if(counterMiss==6)
             {
+                
                 MessageToUserAsync("Obješen si!");
                 this.Frame.Navigate(typeof(singleplayer));
             }

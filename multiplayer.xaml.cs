@@ -25,9 +25,10 @@ namespace VješaloXD
     /// </summary>
     public sealed partial class multiplayer : Page
     {
-        string word;
+        
         int counterMiss = 0;
         List<Button> buttons;
+        string word;
         List<BitmapImage> images;
         List<TextBlock> fieldChar;
         public multiplayer()
@@ -67,7 +68,6 @@ namespace VješaloXD
                     Text = "_",
                     Margin = new Thickness(10),
                     FontSize = 72,
-                    /* FontFamily = new FontFamily("Bradley Hand ITC"),*/
                 };
                 wordArea.Children.Add(textBlock);
                 fieldChar.Add(textBlock);
