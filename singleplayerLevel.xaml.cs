@@ -29,6 +29,7 @@ namespace VješaloXD
         public string rijecZaPog;
         public string[] arrIspis;
         public string temp;*/
+       
         string word;
         int counterMiss = 0;
 
@@ -152,6 +153,7 @@ namespace VješaloXD
             {
                 MessageToUserAsync("Čestitke! Prošao si level!");
                 this.Frame.Navigate(typeof(singleplayer));
+                //pokazat funkciju nezz das
             }
             button.IsEnabled = false;
         }
