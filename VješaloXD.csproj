@@ -151,6 +151,8 @@
   <ItemGroup>
     <Content Include="Assets\click.wav" />
     <Content Include="Assets\htitle.jpg" />
+    <Content Include="Assets\ikona48x48-removebg-preview.png" />
+    <Content Include="Assets\ikona48x48.png" />
     <Content Include="Assets\music1.mp3" />
     <Content Include="Assets\rope1.png" />
     <Content Include="Properties\Default.rd.xml" />

@@ -11,10 +11,10 @@
     <Grid>
         <Button x:Name="povratak_button" CornerRadius="10" Foreground="white" Background="black" FontSize="50" Content="Back" Height="80" Margin="45,45,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click" FontWeight="Normal" FontFamily="Bradley Hand ITC"/>
         <Image Source="/Assets/rope1.png" Margin="1371,-141,10,586"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,489,0,0" Text="Fran Lovričić" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="920,453,0,0" Text="Leon Musović" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="923,0,0,0" Text="Tin Marković" TextWrapping="Wrap" VerticalAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Margin="922,573,0,0" Text="Martin Dumić" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="644,284,0,0" Text="Fran Lovričić" FontSize="128px" TextWrapping="Wrap" VerticalAlignment="Top" Height="162" Width="731"/>
+        <TextBlock HorizontalAlignment="Left" Margin="850,563,0,0" Text="Leon Musović" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1056,563,0,0" Text="Tin Marković" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="724,443,0,0" Text="Martin Dumić" FontSize="90px" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="648"/>
 
     </Grid>
 </Page>
