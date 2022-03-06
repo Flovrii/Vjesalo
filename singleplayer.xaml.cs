@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,7 +23,7 @@ namespace VješaloXD
     /// </summary>
     public sealed partial class singleplayer : Page
     {
-        public static int globalIzbor;
+        public bool globalIzbor;
         public string rijec;
         public singleplayer()
         {
@@ -60,7 +61,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 3;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -72,7 +72,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 4;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -84,7 +83,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 5;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -96,7 +94,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 2;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -108,7 +105,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 6;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -120,7 +116,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 7;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -132,7 +127,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 8;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -144,7 +138,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 9;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -156,7 +149,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 10;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -168,7 +160,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 11;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -180,7 +171,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 12;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -192,7 +182,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 13;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -204,7 +193,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 14;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -216,7 +204,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 15;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -228,7 +215,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 16;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -240,7 +226,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 17;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -252,7 +237,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 18;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -264,7 +248,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 19;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
 
@@ -276,7 +259,6 @@ namespace VješaloXD
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
             mySound.SetSource(stream, file.ContentType);
             mySound.Play();
-            globalIzbor = 20;
             this.Frame.Navigate(typeof(singleplayerLevel));
         }
     }

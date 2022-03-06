@@ -1,8 +1,12 @@
-﻿using System;
+﻿using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Popups;
@@ -36,6 +40,8 @@ namespace VješaloXD
         List<Button> buttons;
         List<BitmapImage> images;
         List<TextBlock> fieldChar;
+
+
         public singleplayerLevel()
         {
             this.InitializeComponent();
@@ -49,20 +55,22 @@ namespace VješaloXD
 
         private void LoadImage()
         {
-            for(int i=1;i<=6;i++)
+            for(int i=0;i<7;i++)
             {
                 var image = new BitmapImage(new Uri(@"ms-appx:slikice/slika" + i.ToString() + ".png"));
                 images.Add(image);
             }
         }
-        
         private string RandomWord()
         {
-            string[] words = { "slon", "bambi", "bmw", "eminem", "nogomet", "aligator", "chevrolet", "ghostbusters", "metallica", "badminton", "majmun", "lexus", "jumanji", "subaru", "titanic", "hrvanje", "mitsubishi", "pingvin", "odbojka", "nirvana" };
+            string[] words = { "slon", "bambi", "bmw", "eminem", "nogomet", "aligator", "chevrolet", "ghostbusters", "metallica", "badminton", "majmun", "lexus", "jumanji", "subaru", "titanic", "hrvanje", "mitsubishi", "pingvin", "odbojka", "nirvana","zubar","denis","kukac","igrica","nogomet","program","kolodvor","lizalica","autocesta","prizemlje","odbojka","mitshubishi","slikarstvo","planinarenje","elektrotehnika","hidroelektrana","kontinentalnost","kinematografija","prijestolonasljednik","otorinolaringologija" };
             Random r = new Random();
             return words[r.Next(words.Length)];
         }
+
         
+
+
         private void DoWordArea()
         {
             CreateKeyboard();
@@ -93,7 +101,7 @@ namespace VješaloXD
         {
             DoWordArea();
         }
-
+        
 
 
         private void CreateKeyboard()
@@ -121,8 +129,9 @@ namespace VješaloXD
                 buttons.Add(button);
             }
         }
+        
 
-        private void BT_Click_Key(object sender, RoutedEventArgs e)
+        private  void BT_Click_Key(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
             string character = button.Content.ToString();
@@ -143,6 +152,7 @@ namespace VješaloXD
             if(counterMiss==6)
             {
                 MessageToUserAsync("Obješen si!");
+                this.Frame.Navigate(typeof(singleplayer));
             }
             int count2 = 0;
             for(int i=0;i<this.word.Length;i++)
@@ -153,7 +163,6 @@ namespace VješaloXD
             {
                 MessageToUserAsync("Čestitke! Prošao si level!");
                 this.Frame.Navigate(typeof(singleplayer));
-                //pokazat funkciju nezz das
             }
             button.IsEnabled = false;
         }
