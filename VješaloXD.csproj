@@ -171,7 +171,6 @@
     <Content Include="slikice\slika3.png" />
     <Content Include="slikice\slika4.png" />
     <Content Include="slikice\slika5.png" />
-    <Content Include="slikice\slika6.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

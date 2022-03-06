@@ -130,7 +130,7 @@ namespace VješaloXD
             if (count2 == this.word.Length)
             {
                 MessageToUserAsync("Čestitke! Pogodio si riječ!");
-                this.Frame.Navigate(typeof(MainPage));
+                this.Frame.Navigate(typeof(upisivanjeRijeci));
             }
             button.IsEnabled = false;
         }
